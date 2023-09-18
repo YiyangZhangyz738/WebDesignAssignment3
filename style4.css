@@ -1,0 +1,170 @@
+body {
+    background-color: #855FDE; /* 设置背景颜色为#7E72E9 */
+    color: white; /* 设置文字颜色为白色 */
+    margin: 0; /* 移除默认的页面边距 */
+    padding: 0; /* 移除默认的内边距 */
+}
+
+.header {
+    background-color: #544c9c; /* 设置背景颜色为#7E72E9 */
+    padding: 10px; /* 添加一些内边距，以使内容更加美观 */
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 垂直居中对齐 */
+    width: 100%; /* 100%宽度 */
+}
+
+.header img {
+    width: 64px; /* 设置图标的宽度 */
+    height: 60px; /* 设置图标的高度 */
+    margin-right: 10px; /* 添加一些右侧间距，以分隔图标和标题 */
+}
+
+.header h1 {
+    font-family: 'Bradley Hand', sans-serif;
+    margin: 0; /* 移除标题的默认外边距 */
+}
+
+.header a {
+    text-decoration: none; /* 去掉下划线 */
+    color: white; /* 设置链接文本颜色为白色 */
+  }
+  
+
+h1 {
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 3.2rem;
+    margin-top: 25vh; /* 将h1置于页面顶部的三分之一处 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+
+h2 {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    width: 75%;
+    color: #000000;
+    margin: 0 auto; /* 水平居中 */
+    text-align: center; /* 文本居中对齐 */
+    text-shadow: 1px 1px #4b3f72;
+}
+
+h3 {
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 2.0rem;
+    line-height: 2rem;
+    margin-top: 0;
+    color: #000000;
+    text-align: center; /* 文本居中对齐 */
+}
+
+h4 {
+    font-family: 'Marker Felt', sans-serif;
+    font-size: 1rem;
+    color: #525151;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+p {
+    font-family: 'Marker Felt', sans-serif;
+    font-size: 2.4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff799;
+    text-align: center; 
+}
+
+form {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 10vh; /* 将form置于页面顶部的三分之二处 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+footer {
+    background-color: #333; /* 页脚背景颜色 */
+    color: #fff; /* 文字颜色 */
+    padding: 10px 0; /* 上下内边距 */
+    justify-content: space-between; /* 左右分布 */
+    bottom: 0; /* 位于底部 */
+    width: 100%; /* 100%宽度 */
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-left {
+    order: 1; /* 调整左侧链接的显示顺序 */
+  }
+  
+  .footer-right {
+    order: 2; /* 调整右侧链接的显示顺序 */
+  }
+
+.footer-left a,
+.footer-right a {
+    color: #fff; /* 链接文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0; /* 清除边框，某些情况下也可能导致间隙 */
+    display: block; /* 使图片成为块级元素，确保不受行高的影响 */
+    
+}
+
+.container {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 在水平方向上居中对齐 */
+}
+
+/* 隐藏弹窗 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 弹窗内容框 */
+.modal-content {
+    background-color: #fff799;
+    margin: 7% auto;
+    padding: 10px;
+    border: 1px solid #855FDE;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 关闭按钮 */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* 调整按钮的内边距 */
+    border-radius: 10px; /* 圆角半径，使其呈现圆角正方形 */
+    background-color: #fff799; /* 蓝色背景 */
+    color: #855FDE; /* 文本颜色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+    font-weight: bold;
+    margin-left: 20%;
+    margin-right: 20%;
+}

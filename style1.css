@@ -1,0 +1,139 @@
+body {
+    background-color: #B0D9F6; /* 设置背景颜色为#7E72E9 */
+    color: white; /* 设置文字颜色为白色 */
+    margin: 0; /* 移除默认的页面边距 */
+    padding: 0; /* 移除默认的内边距 */
+}
+
+.header {
+    background-color: #544c9c; /* 设置背景颜色为#7E72E9 */
+    padding: 10px; /* 添加一些内边距，以使内容更加美观 */
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 垂直居中对齐 */
+    width: 100%; /* 100%宽度 */
+}
+
+.header img {
+    width: 64px; /* 设置图标的宽度 */
+    height: 60px; /* 设置图标的高度 */
+    margin-right: 10px; /* 添加一些右侧间距，以分隔图标和标题 */
+}
+
+.header h1 {
+    font-family: 'Bradley Hand', sans-serif;
+    margin: 0; /* 移除标题的默认外边距 */
+}
+
+.header a {
+    text-decoration: none; /* 去掉下划线 */
+    color: white; /* 设置链接文本颜色为白色 */
+  }  
+
+h1 {
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 3.2rem;
+    margin-top: 25vh; /* 将h1置于页面顶部的三分之一处 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+h2 {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 2.4rem;
+    width: 75%;
+    margin: 0 auto; /* 水平居中 */
+    text-align: center; /* 文本居中对齐 */
+    text-shadow: 1px 1px #4b3f72;
+}
+
+h3 {
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 2.4rem;
+    text-align: center; /* 文本居中对齐 */
+}
+
+p {
+    font-family: 'Marker Felt', sans-serif;
+    font-size: 1.6rem;
+    width: 60%;
+    margin: 0 auto; /* 水平居中 */
+    text-align: center; /* 文本居中对齐 */
+    text-shadow: 1px 1px #4b3f72;
+    font-weight: 400;
+}
+
+
+
+
+
+.scroll-container {
+    height: 600px; /* 设置容器高度，以便有足够的滚动空间 */
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-image {
+    width: 300px; /* 设置图片宽度，可以根据需要进行调整 */
+}
+
+.scroll-image:nth-child(1) {
+    margin-top: 10%; /* 顶部外边距 */
+    margin-left: 20%; /* 左边外边距 */
+}
+.scroll-image:nth-child(2) {
+    margin-top: 5%; /* 顶部外边距 */
+    margin-left: 80%; /* 左边外边距 */
+}
+.scroll-image:nth-child(3) {
+    margin-top: 5%; /* 顶部外边距 */
+    margin-left: 80%; /* 左边外边距 */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr; /* 调整列的比例 */
+    column-gap: 20px; /* 可以根据需要调整列之间的间距 */
+  }
+
+  .image {
+    width: 300px; /* 设置图片宽度 */
+    grid-column: 1; /* 控制图片位于第一列 */
+    justify-self: right; /* 图片水平居中 */
+  }
+
+  h3 {
+    grid-column: 2; /* 控制标题位于第二列 */
+  }
+
+  .features{
+    font-family: 'Rockwell', sans-serif;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto; /* 水平居中 */
+    text-align: left; /* 文本居中对齐 */
+    font-weight: 400;
+  }
+
+footer {
+    background-color: #333; /* 页脚背景颜色 */
+    color: #fff; /* 文字颜色 */
+    padding: 10px 0; /* 上下内边距 */
+    justify-content: space-between; /* 左右分布 */
+    bottom: 0; /* 位于底部 */
+    width: 100%; /* 100%宽度 */
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-left {
+    order: 1; /* 调整左侧链接的显示顺序 */
+  }
+  
+  .footer-right {
+    order: 2; /* 调整右侧链接的显示顺序 */
+  }
+
+.footer-left a,
+.footer-right a {
+    color: #fff; /* 链接文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}

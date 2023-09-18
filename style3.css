@@ -1,0 +1,162 @@
+body {
+    background-color: #859BE5; /* 设置背景颜色为#7E72E9 */
+    color: rgb(255, 255, 255); /* 设置文字颜色为白色 */
+    margin: 0; /* 移除默认的页面边距 */
+    padding: 0; /* 移除默认的内边距 */
+}
+
+.header {
+    background-color: #544c9c; /* 设置背景颜色为#7E72E9 */
+    padding: 10px; /* 添加一些内边距，以使内容更加美观 */
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 垂直居中对齐 */
+    width: 100%; /* 100%宽度 */
+}
+
+.header img {
+    width: 64px; /* 设置图标的宽度 */
+    height: 60px; /* 设置图标的高度 */
+    margin-right: 10px; /* 添加一些右侧间距，以分隔图标和标题 */
+}
+
+.header h1 {
+    font-family: 'Bradley Hand', sans-serif;
+    margin: 0
+}
+
+.header a {
+    text-decoration: none; /* 去掉下划线 */
+    color: white; /* 设置链接文本颜色为白色 */
+  }
+  
+.header2 {
+    background-image: url('assets/images/hearder.png'); /* 替换 'your-image.jpg' 为你的头图文件路径 */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* 设置头图的高度 */
+    text-align: center;
+    color: #ffffff; /* 设置文本颜色，以使其在头图上可见 */
+    padding: 50px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1 {
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 3.2rem;
+    text-align: center; /* 文本居中对齐 */
+}
+
+h2 {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 2.4rem;
+    margin-left: 10%;
+    text-shadow: 1px 1px #4b3f72;
+}
+
+h3 {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px #4b3f72;
+}
+
+p {
+    font-family: 'Marker Felt', sans-serif;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px #4b3f72;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+form {
+    font-family: 'Rockwell', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 10vh; /* 将form置于页面顶部的三分之二处 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+footer {
+    background-color: #333; /* 页脚背景颜色 */
+    color: #fff; /* 文字颜色 */
+    padding: 10px 0; /* 上下内边距 */
+    justify-content: space-between; /* 左右分布 */
+    bottom: 0; /* 位于底部 */
+    width: 100%; /* 100%宽度 */
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-left {
+    order: 1; /* 调整左侧链接的显示顺序 */
+  }
+  
+  .footer-right {
+    order: 2; /* 调整右侧链接的显示顺序 */
+  }
+
+.footer-left a,
+.footer-right a {
+    color: #fff; /* 链接文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr; /* 调整列的比例 */
+    column-gap: 20px; /* 可以根据需要调整列之间的间距 */
+}
+
+.image {
+    width: 300px; /* 设置图片宽度 */
+    grid-column: 1; /* 控制图片位于第一列 */
+    justify-self: right; /* 图片水平居中 */
+}
+
+h2 {
+    grid-column: 2; /* 控制标题位于第二列 */
+}
+
+
+.features{
+    font-family: 'Rockwell', sans-serif;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto; /* 水平居中 */
+    text-align: left; /* 文本居中对齐 */
+    font-weight: 400;
+  }
+
+.case-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.case-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.case-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.case-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* 调整按钮的内边距 */
+    border-radius: 10px; /* 圆角半径，使其呈现圆角正方形 */
+    background-color: #1369c6; /* 蓝色背景 */
+    color: #ffffff; /* 文本颜色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+    font-weight: bold;
+}

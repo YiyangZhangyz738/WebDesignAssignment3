@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100;400;600&family=Notable&family=Noto+Sans+Linear+B&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0px;
+}
+
+
+
+
+main {
+    display: flex;
+    flex: 1 2 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Noto Sans Linear B', sans-serif;
+    font-size: .8rem;
+}
+
+link {
+    color: #cc660e;
+    text-emphasis-color: #cc660e;
+    text-decoration: dashed;
+}
+
+.row {
+    padding: 1rem;
+    max-width: 600px;
+    max-height: 900px;
+    
+    overflow: hidden;
+    margin: .5rem;
+
+}
+
+.row2 {
+    padding: 1rem;
+    max-width: 800px;
+    max-height: 600px;
+    text-align: center;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+
+.row3 {
+    padding: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+
+p {
+    font-family: 'Mooli-Regular'', sans-serif;
+    font-size 1rem;
+    line-height: 1rem;
+}
+
+li {
+    line-height: 1.2rem;
+    padding: .5rem;
+    color: #050553;
+    background-color: linear-gradient(rgba(250, 145, 145, 0.7), rgba(237, 201, 165, 0.749));
+}
+
+h1 {
+    font-family: 'Bradley Hand', sans-serif;
+    font-weight: initial;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: #88b5d7;
+    text-shadow: 2px 2px #456a86;
+
+}
+
+h2 {
+    font-family: 'Marker Felt', sans-serif;
+    font-weight: initial;
+    color: #9b84e7;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-shadow: 1px 1px #4b3f72;
+
+}
+
+h3 {
+    font-family: 'Rockwell', sans-serif;
+    color: #df76a2;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-shadow: 1px 1px #8a4c66;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Marker Felt', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #456a86;
+}
+
+footer {
+    background-image: linear-gradient(#7ca6d8,#0072bc);
+    color: #000000;
+    font-size: .8rem;
+    font-family: 'Rockwell', sans-serif;
+    line-height: 1rem;
+    padding: 5%;
+}

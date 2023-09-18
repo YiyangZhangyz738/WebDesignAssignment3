@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Internet Explorer Exploded = Semantic Sentiments and Aspirations (In Class Assignment)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100;400;600&family=Notable&family=Noto+Sans+Linear+B&display=swap');
+    </style>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="assets/images/head.png" alt="sign">
+        <h1><a href="index0">FUTURE TELLING</a></h1>
+    </div>
+
+    <div class="header2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Medical treatment in Metaverse</h1>
+    </div>
+    <p> Metaverse in medicine may be used in many different ways. The possibility to perform surgery at a distance of thousands of miles separating the patient from the surgeon, who could have also the possibility to visualize in real-time patient’s clinical data, including diagnostic images, obviously is very appealing. </p>
+    
+    <div class="case-container">
+        <img src="assets/images/case1.png" alt="case1" class="case-image">
+        <h2 class="case-title">Case: Asthma Prevention Application (AHA)</h2>
+        <p class="case-description">A case in point is the Asthma Prevention Application (AHA), developed in the USA, which was designed to conduct healthcare research on a large scale and provide real-time monitoring of air pollution. Based on the analysis of patients’ electronic asthma diary data, combined with atmospheric data, this application can predict acute asthma attacks, contributing to primary and secondary prevention of the disease.</p>
+        
+        <p><a href="https://www.nature.com/articles/nbt.3826" class="button">Learn More</a></p>
+    </div>
+
+    <div class="case-container">
+        <img src="assets/images/case2.png" alt="case2" class="case-image">
+        <h2 class="case-title">Case: Aimedis Health City</h2>
+        <p class="case-description">The taking of digital care paths to extremes as a physician–patient interaction tool led to create virtual hospitals in the metaverse, such as the Hospital Alfa in the virtual city called Aimedis Health City, where doctors and patients of different origins and nationalities meet and interact, sharing their experience and knowledge.</p>
+        <p><a href="https://aimedis.com" class="button">Learn More</a></p>
+    </div>
+   
+    <div class="case-container">
+        <img src="assets/images/case3.png" alt="case3" class="case-image">
+        <h2 class="case-title">Case: Lung Cancer Screening Campaign</h2>
+        <p class="case-description">Another application of the metaverse in medicine was adopted in China since 2018, where an MIoT model was used for lung cancer screening campaign. The innovative screening system compares, via a network of suitable processors, the tomographic image of the subcentimetre nodules identified in a patient with those of an image archiving system. In this way, an effective screening model was created based on radiological evaluation in real time and on simultaneous comparison with previous exams. By developing PNapp5A, an application based on the five-step assessment of pulmonary nodules, it was possible to improve the early diagnosis of pulmonary nodules using big data-based management technologies.</p>
+        <p><a href="https://scholar.google.com/scholar_lookup?journal=Int+J+Respir&title=IoT-aided+three-plus-two+model+for+the+differential+diagnosis+of+pulmonary+nodules&volume=1&publication_year=2014&pages=1201-1202&" class="button">Learn More</a></p>
+    </div>
+   
+
+    <footer>
+        <div class="footer-left">
+            <a href="index0">Back to Homepage</a>
+        </div>
+        <div class="footer-right">
+            <a href="page4">Continue to Entertainment in Metaverse</a>
+        </div>
+    </footer>
+
+    
+</body>
+
+
+</html>
