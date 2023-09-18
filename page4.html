@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Internet Explorer Exploded = Semantic Sentiments and Aspirations (In Class Assignment)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100;400;600&family=Notable&family=Noto+Sans+Linear+B&display=swap');
+    </style>
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="assets/images/head.png" alt="sign">
+        <h1><a href="index0.html">FUTURE TELLING</a></h1>
+    </div>
+
+    <h1>Entertainment in Metaverse</h1>
+
+    <p>Curious about how entertainment like</p>
+    <div class="container">
+        <img src="assets/images/title1.png" alt="title" class="centered-image" id="openModalBtn1">
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn1">&times;</span>
+            <h2>Music</h2>
+            <h3><strong>Virtual Concerts</strong></h3>
+            <div class="container">
+                <img src="assets/images/music.png" alt="title" width="300px">
+            </div>
+            <h4>Thanks to metaverse technology, you can catch a VR concert by your favorite artist and watch the action right from your couch.
+            </h4>
+            <h4>We can now use augmented and virtual reality to create effects like holograms that add incredible immersive experiences to concerts.
+            </h4>
+            <h4>The ABBA Voyage experience in London is a great example of how immersive technology enhances the entire concert experience. The creators of ABBA Voyage recorded the group members performing their songs – the singers are in their seventies now – and used artificial intelligence to make them look younger onstage. Now they are using the AI-generated version of ABBA group members to create holograms that can perform on stage during the ABBA Voyage experience.
+            </h4> 
+            <h4>In the meantime, online game platforms like Fortnite and Roblox are already hosting their own virtual concerts, featuring artists like Twenty One Pilots, Ariana Grande, and Travis Scott. These virtual experiences have already attracted millions of viewers, and we are likely to see a lot more of these metaverse performances.</h4>
+            </h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="assets/images/title2.png" alt="title" class="centered-image" id="openModalBtn2">
+    </div>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn2">&times;</span>
+            <h2>Theme Parks</h2>
+            <h3><strong>Riding the VR and AR at Theme Parks</strong></h3>
+            <div class="container">
+                <img src="assets/images/disneyland.png" alt="title" width="300px">
+            </div>
+            <div class="container">
+                <img src="assets/images/universal.png" alt="title" width="300px">
+            </div>
+            <h4>Walt Disney has announced their intention to build a theme park in the metaverse in the next few years, and we already have amusement park rides that are enhanced by AR and VR.
+            </h4>
+            <h4>Universal Studios Hollywood will also import a Mario Kart-themed ride from Japan that uses augmented reality to create the illusion that the user is interacting with virtual characters and objects. Visor-like glasses will enable theme park guests to engage with digital creations on the ride in real-time.
+            </h4>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <img src="assets/images/title4.png" alt="title" class="centered-image" id="openModalBtn4">
+    </div>
+
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn4">&times;</span>
+            <h2>Movies</h2>
+            <h3><strong>A More Immersive Movie Experience</strong></h3>
+            <div class="container">
+                <img src="assets/images/movies.png" alt="title" width="300px">
+            </div>
+            <h4>
+                Innovative directors and producers are already using AR and VR to make the movie-watching experience more immersive.
+            </h4>
+            <h4>
+                Directors can film 360-degree footage to help viewers feel like they are really part of the action. This is a great way to help transport people into virtual locations all over the world and let them experience what it’s like to be there in person.
+            </h4>
+            <h4>
+                A lot of the technology that has been developed in video games is now being used in movie making, as well. In the future, directors will be able to make movies where the content is generated on the fly using AI, and you’ll be able to interact with characters and settings based on your own choices. Everyone will have a completely unique experience because the personalized movie content will be generated specifically for you.
+            </h4>
+            <h4>
+                Many movies are also shooting behind-the-scenes footage that is available to watch in VR, so you can explore the set and see what happened as the movie was being made.
+            </h4>
+        </div>
+    </div>
+
+
+    <p>are incorporating immersive technology and living up to the promise of the metaverse?</p>
+    <br>
+    <br>
+    <br>
+
+    <p class="button">Click on MUSIC, THEME PARKS or MOVIES to explore more</p>
+
+
+    <footer>
+        <div class="footer-left">
+            <a href="index0.html">Back to Homepage</a>
+        </div>
+        
+    </footer>
+
+    <script>
+        // 获取打开弹窗按钮和关闭按钮
+        var openModalBtn1 = document.getElementById("openModalBtn1");
+        var closeModalBtn1 = document.getElementById("closeModalBtn1");
+        var modal1 = document.getElementById("myModal");
+    
+        // 当点击图片时，显示弹窗
+        openModalBtn1.onclick = function() {
+            modal1.style.display = "block";
+        }
+    
+        // 当点击关闭按钮或弹窗外部时，关闭弹窗
+        closeModalBtn1.onclick = function() {
+            modal1.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
+    
+    <script>
+        // 获取打开弹窗按钮和关闭按钮
+        var openModalBtn2 = document.getElementById("openModalBtn2");
+        var closeModalBtn2 = document.getElementById("closeModalBtn2");
+        var modal2 = document.getElementById("myModal2");
+    
+        // 当点击图片时，显示弹窗
+        openModalBtn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+    
+        // 当点击关闭按钮或弹窗外部时，关闭弹窗
+        closeModalBtn2.onclick = function() {
+            modal2.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+    
+    <script>
+        // 获取打开弹窗按钮和关闭按钮
+        var openModalBtn4 = document.getElementById("openModalBtn4");
+        var closeModalBtn4 = document.getElementById("closeModalBtn4");
+        var modal4 = document.getElementById("myModal4");
+    
+        // 当点击图片时，显示弹窗
+        openModalBtn4.onclick = function() {
+            modal4.style.display = "block";
+        }
+    
+        // 当点击关闭按钮或弹窗外部时，关闭弹窗
+        closeModalBtn4.onclick = function() {
+            modal4.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        }
+    </script>
+    
+    
+</body>
+
+
+</html>
