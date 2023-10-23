@@ -1,16 +1,21 @@
 body {
-    background-color: #7E72E9; /* 设置背景颜色为#7E72E9 */
-    color: white; /* 设置文字颜色为白色 */
+    background-color: #fffefe; /* 设置背景颜色为#7E72E9 */
+    color: rgb(0, 0, 0); /* 设置文字颜色为白色 */
     margin: 0; /* 移除默认的页面边距 */
     padding: 0; /* 移除默认的内边距 */
 }
 
+p {
+    font-family: 'Caprasimo', sans-serif;
+    font-size: 1rem;
+}
+
 .header {
-    background-color: #544c9c; /* 设置背景颜色为#7E72E9 */
-    padding: 10px; /* 添加一些内边距，以使内容更加美观 */
-    display: flex; /* 使用弹性布局 */
-    align-items: center; /* 垂直居中对齐 */
-    width: 100%; /* 100%宽度 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
 }
 
 .header img {
@@ -20,22 +25,119 @@ body {
 }
 
 .header h1 {
-    font-family: 'Bradley Hand', sans-serif;
+    font-family: 'Mooli-Regular', sans-serif;
     margin: 0; /* 移除标题的默认外边距 */
 }
 
 .header a {
     text-decoration: none; /* 去掉下划线 */
-    color: white; /* 设置链接文本颜色为白色 */
+    color: rgb(0, 0, 0); /* 设置链接文本颜色为白色 */
+  }
+
+  /* 菜单按钮样式 */
+  /* 菜单按钮样式 */
+#menu-button {
+    position: absolute;
+    top: 25px;
+    right: 10px; /* 将left改为right */
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(214, 214, 214);
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 2.4rem;
+    text-align: center; /* 文本居中对齐 */
   }
   
+  /* 隐藏菜单项 */
+  #menu {
+    position: absolute;
+    top: 45 px;
+    right: 10px; /* 将left改为right */
+    z-index: 1;
+    display: none;
+
+  }
+  
+  
+
+  /* 菜单项样式 */
+  #menu ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 1.3rem;
+    
+  }
+
+  #menu ul li {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  #menu ul li a {
+    color: inherit; /* 使用继承的颜色，显示原本的颜色 */
+    text-decoration: none; /* 去掉链接的下划线 */
+}
+  
+
+  /* 鼠标悬停时显示菜单项 */
+  #menu-button:hover + #menu {
+    display: block;
+  }
+
+  /* 鼠标悬停在菜单项上时继续显示 */
+  #menu:hover {
+    display: block;
+  }
+  
+
+.header2 {
+    background-image: url('assets/images/museum.png'); /* 替换 'your-image.jpg' 为你的头图文件路径 */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* 设置头图的高度 */
+    text-align: left; /* 文本左对齐 */
+    color: #ffffff; /* 设置文本颜色，以使其在头图上可见 */
+    padding: 50px;
+}
+
 
 h1 {
     font-family: 'Mooli-Regular', sans-serif;
     font-size: 3.2rem;
     margin-top: 25vh; /* 将h1置于页面顶部的三分之一处 */
-    text-align: center; /* 文本居中对齐 */
+    text-align: left; /* 文本左对齐 */
+    margin-left: 25vw; /* 设置左边距以将文本移到左边四分之一处 */
 }
+
+h2 {
+    font-family: 'Mooli-Regular', sans-serif;
+    font-size: 3.2rem;
+    margin-top: 25vh; /* 将h1置于页面顶部的三分之一处 */
+    text-align: left; /* 文本左对齐 */
+    margin-left: 25vw; /* 设置左边距以将文本移到左边四分之一处 */
+}
+
+h2 a{
+color: inherit; /* 使用继承的颜色，显示原本的颜色 */
+    text-decoration: none; /* 去掉链接的下划线 */
+}
+
+h2::before, h2::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 4px;
+    background-color: #ffffff; /* 横线的颜色 */
+    margin: 18px 0px; /* 控制横线上下的间距和使其水平居中 */
+}
+
+
 
 form {
     font-family: 'Rockwell', sans-serif;
@@ -45,19 +147,65 @@ form {
 }
 
 footer {
-    background-color: #333;
+    background-color: #8c8c8cb6;
     color: white;
     padding: 10px;
-    position: absolute; /* 让页脚固定在底部 */
+    
     bottom: 0; /* 位于底部 */
     width: 100%; /* 100%宽度 */
 }
+
+
 
 footer p {
     margin: 0;
 }
 
 .highlight {
-    background-color: rgb(152, 132, 1); /* 设置高亮背景颜色 */
+    background-color: rgb(154, 147, 105); /* 设置高亮背景颜色 */
     font-weight: bold; /* 设置文本粗体以增强可读性 */
+}
+
+.new-works {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.new-works h3 {
+    font-family: 'Caprasimo', sans-serif;
+    font-size: 2rem;
+}
+
+.new-works-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.new-works-image {
+    flex: 0 1 calc(33.33% - 20px);
+    position: relative;
+}
+
+.new-works-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.new-works-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0;
+    font-family: 'Caprasimo', sans-serif;
+}
+
+.new-works-description p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
 }

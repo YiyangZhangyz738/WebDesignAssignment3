@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Museum Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100;400;600&family=Notable&family=Noto+Sans+Linear+B&display=swap');
+        .header3 {
+            background-image: url('assets/images/audio.png');
+            background-size: cover;
+            height: 360px;
+            position: relative;
+            font-family: 'Caprasimo', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">｜Online Museum｜</a></h1>
+        <div class="menu">
+        </div>
+    </div>
+
+    <label id="menu-button">Menu</label>
+    <div id="menu">
+        <ul>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="photography.html">Photograph</a></li>
+            <li><a href="painting.html">Painting</a></li>
+        </ul>
+    </div>
+
+    <div class="header3">
+        <div class="title">
+            <h4>AUDIO</h4>
+        </div>
+    </div>
+
+    
+
+    <div class="image-container2">
+        <div class="image2">
+            <a href="a1.html">
+                <canvas id="visualization1" width="300" height="200"></canvas>
+            </a>
+            <div class="image-title">Novice Chef</div>
+        </div>
+        <div class="image2">
+            <a href="a2.html">
+                <canvas id="visualization2" width="300" height="200"></canvas>
+            </a>
+            <div class="image-title">Can't Get Through</div>
+        </div>
+        <div class="image2">
+            <a href="a3.html">
+                <canvas id="visualization3" width="300" height="200"></canvas>
+            </a>
+            <div class="image-title">Indoor Walking</div>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+        <p>Images and text materials sourced from the Internet.</p>
+        <p>Credit to Yifei Luo, Yili Wen.</p>
+    </footer>
+
+    <script>
+        function createVisualization(canvasId, audioUrl) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const analyser = audioContext.createAnalyser();
+            const canvas = document.getElementById(canvasId);
+            const canvasContext = canvas.getContext('2d');
+
+            const audio = new Audio(audioUrl);
+            const source = audioContext.createMediaElementSource(audio);
+            source.connect(analyser);
+            analyser.connect(audioContext.destination);
+
+            analyser.fftSize = 256;
+            const bufferLength = analyser.frequencyBinCount;
+            const dataArray = new Uint8Array(bufferLength);
+
+            function draw() {
+                analyser.getByteFrequencyData(dataArray);
+
+                canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+        
+                const barWidth = (canvas.width / bufferLength) * 2.5;
+                let barHeight;
+                let x = 0;
+
+                for (let i = 0; i < bufferLength; i++) {
+                    barHeight = dataArray[i];
+
+                // 计算灰度颜色
+                const grayValue = barHeight + 100;
+                const color = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+        
+                canvasContext.fillStyle = color;
+                canvasContext.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
+        
+                x += barWidth + 1;
+            }
+
+            requestAnimationFrame(draw);
+        }
+
+
+            audio.addEventListener('canplay', () => {
+                audio.volume = 0.5;
+                audio.play();
+                draw();
+            });
+        }
+
+        createVisualization('visualization1', 'assets/images/cooking.mp3');
+        createVisualization('visualization2', 'assets/images/phone.wav');
+        createVisualization('visualization3', 'assets/images/walking_in_a_house2.mp3');
+    </script>
+</body>
+</html>
