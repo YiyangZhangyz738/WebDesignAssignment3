@@ -1,102 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Museum Categories</title>
+    <title>Assignment 2 - Internet Explorer Exploded = Semantic Sentiments and Aspirations (In Class Assignment)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Foldit:wght@100;400;600&family=Notable&family=Noto+Sans+Linear+B&display=swap');
     </style>
     <link rel="stylesheet" href="style1.css">
 </head>
+
 <body>
     <div class="header">
-        <h1><a href="index.html">｜Online Museum｜</a></h1>
-        <div class="menu">
-        </div>
+        <img src="assets/images/head.png" alt="sign">
+        <h1><a href="index.html">FUTURE TELLING</a></h1>
     </div>
 
-    <label id="menu-button">Menu</label>
-    <div id="menu">
+
+    <h1>What is the Metaverse？</h1>
+
+    <div class="scroll-container">
+        <img src="assets/images/1.png" alt="VR" class="scroll-image">
+        <br>
+        <img src="assets/images/2.png" alt="VR" class="scroll-image">
+        <br>
+        <img src="assets/images/3.png" alt="VR" class="scroll-image">
+    </div>
+
+    <h2>The metaverse is the next evolution in social connection and the successor to the mobile internet.</h2>
+    <p>Like the internet, the metaverse will help you connect with people when you aren’t physically in the same place and get us even closer to that feeling of being together in person.</p>
+    <br>
+    <p>
+    The metaverse is a virtual reality (VR) space that enables users to interact with each other inside a computer-generated environment. In 2021, Facebook’s parent company rebranded to Meta, expanding its focus beyond social media to encompass building the metaverse. The Facebook metaverse refers to Facebook (or, Meta's) contribution to the metaverse. 
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <img src="assets/images/meta.png" alt="meta" width="100" class="image">
+        <h3>What is Facebook metaverse?</h3>
+      </div>
+    <br>
+    <p>
+        Mark Zuckerberg, founder and CEO of Meta (formerly Facebook), describes the metaverse as a place to “connect, work, play, learn, and shop". Here are a few Facebook metaverse features:
+    </p>
+    <br>
+    <br>
+    <div class="features">
         <ul>
-            <li><a href="audio.html">Audio</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="photography.html">Photograph</a></li>
-            <li><a href="painting.html">Painting</a></li>
+            <li>
+                <strong>Horizon Worlds.</strong> With the rebranding of Facebook to Meta came the introduction of Horizon Worlds, “an ever-expanding social universe” with “over 10,000 worlds and experiences,” and the expansion of its Meta Quest VR gear offerings [2]. The application uses VR technology, controllable animation, and physics to replicate objects in the physical world. It offers multiplayer gaming, music, interactive puzzles, sports, films, and more.
+            </li>
+            <br>
+            <li>
+                <strong>Horizon Workrooms.</strong> <a href="https://forwork.meta.com/horizon-workrooms/">Horizon Workrooms</a> is designed to simulate an in-person workplace experience. It's a virtual space that includes collaboration tools for businesses to use.
+            </li>
+            <br>
+            <li>
+                <strong>Horizon Venues.</strong> Have you ever wished you could attend a concert or a sports game from the comfort of your own home? <a href="https://www.meta.com/zh-cn/experiences/3002729676463989/">Horizon Venues</a> aims to deliver that experience by providing users with computerized simulations of event spaces.
+            </li>
         </ul>
     </div>
-
-    <div class="header2">
-        <h2>Select the category</h2>
-    </div>
-
-    <div class="container">
-        <div class="category">
-            <a href="audio.html">
-            <img src="assets/images/audio.png" alt="Audio">
-            <div class="overlay">
-                <p>Audio</p>
-            </div>
-        </a>
-        </div>
-        <div class="category">
-            <a href="video.html">
-            <img src="assets/images/Video.jpeg" alt="Video">
-            <div class="overlay">
-                <p>Video</p>
-            </div>
-        </a>
-        </div>
-        <div class="category">
-            <a href="photography.html">
-            <img src="assets/images/photo.jpeg" alt="Photography">
-            <div class="overlay">
-                <p>Photography</p>
-            </div>
-        </a>
-        </div>
-        <div class="category">
-            <a href="painting.html">
-            <img src="assets/images/paint.jpeg" alt="Painting">
-            <div class="overlay">
-                <p>Painting</p>
-            </div>
-        </a>
-        </div>
-    </div>
-
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -107,10 +75,27 @@
     <br>
 
     <footer>
-        <p>Images and text materials sourced from the Internet.</p>
-        <p>Credit to Yifei Luo, Yili Wen.</p>
+        <div class="footer-left">
+            <a href="index.html">Back to Homepage</a>
+        </div>
+        <div class="footer-right">
+            <a href="page2.html">Continue to Education in Metaverse</a>
+        </div>
     </footer>
-    
 
+    <script>
+        const scrollImages = document.querySelectorAll('.scroll-image');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const translateY = -scrollY * 2; // 调整倍数以加快移动速度
+            scrollImages.forEach(image => {
+                image.style.transform = `translateY(${translateY}px)`;
+            });
+        });
+    </script>
+    
 </body>
+
+
 </html>
